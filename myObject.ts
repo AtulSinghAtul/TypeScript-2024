@@ -34,37 +34,57 @@
 
 //!  READONLY and optional in typescript
 
-type User = {
-  readonly _id: string;
-  name: string;
-  email: string;
-  isActive: boolean;
-  credcardDetails?: number;
-};
+// type User = {
+//   readonly _id: string;
+//   name: string;
+//   email: string;
+//   isActive: boolean;
+//   credcardDetails?: number;
+// };
 
-let myUser: User = {
-  _id: "12345",
-  name: "at",
-  email: "at@t.com",
-  isActive: true,
-};
+// let myUser: User = {
+//   _id: "12345",
+//   name: "at",
+//   email: "at@t.com",
+//   isActive: true,
+// };
 
-myUser.name = "Atul";
+// myUser.name = "Atul";
 // myUser._id = "9876";
 
-type cardNumber = {
-  cardNumber: string;
+// type cardNumber = {
+//   cardNumber: string;
+// };
+
+// type cardDate = {
+//   cardNumber: number;
+// };
+
+// type cardDetailes = cardNumber &
+//   cardDate & {
+//     cvv: number;
+//   };
+
+//! 01:41:56 - 01:49:46 - Array in Typescript
+
+const myHero = [];
+const myHeros: string[] = [];
+// const myPower: number[] = [];
+//* another way definig the same thing
+const myPower: Array<number> = [];
+
+type User = {
+  name: string;
+  isActive: boolean;
 };
 
-type cardDate = {
-  cardNumber: number;
-};
+const allUser: User[] = [];
 
-type cardDetailes = cardNumber &
-  cardDate & {
-    cvv: number;
-  };
+const mlModels: number[][] = [[1, 2, 3, 4], []];
 
-//! Array in Typescript
+allUser.push({ name: "atul singh", isActive: true });
+myHero.push("thor");
+myHeros.push("rom", "thor");
+myPower.push(2);
 
 export {};
