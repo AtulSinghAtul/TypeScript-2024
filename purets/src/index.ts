@@ -372,7 +372,7 @@ function getTrueShape(shape: Shape) {
   if (shape.kind === "circle") {
     return Math.PI * shape.radius ** 2;
   }
-  // return shape.side * shape.side;
+   return shape.side * shape.side;
 }
 
 //^ Exhaustiveness Checking with never
